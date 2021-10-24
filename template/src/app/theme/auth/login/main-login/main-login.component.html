@@ -1,0 +1,76 @@
+
+<section style="
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+  ">
+  
+  <div class="row">
+    <div class="col-md-6">
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-sm-12">
+          <form action="javascript:" [formGroup]="loginfrm" (keydown)="key_submit($event, 'key')">
+            <div class="login-box">
+              <h3 class="text-center text-primary">Sign In</h3>
+              <div class="form-group">
+                <label for="email" class="col-form-label label-fl">Email</label>
+                <input type="text" name="user-name" id="email" class="form-control input-control"
+                  formControlName="email" required />
+              </div>
+              <div class="form-group">
+                <label for="pword" class="col-form-label label-fl">Password</label>
+                <input type="password" name="user-name" id="pword" class="form-control input-control"
+                  formControlName="password" required />
+              </div>
+              <div class="row m-t-25 text-left">
+                <div class="col-12">
+                  <div class="alert alert-danger" mdbRippleRadius *ngIf="serve_res">
+                    <button type="button" class="close" appRemoveAlert (click)="serve_res = ''">
+                      <i class="fa fa-times-circle-o" style="color: red"></i>
+                    </button>
+                    <p><strong>Error!</strong> {{ serve_res }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row m-t-25 forgt">
+                <div class="col-12">
+                  <div class="checkbox-fade fade-in-primary">
+                    <label>
+                      <input type="checkbox" value="" />
+                      <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>
+                      <span class="text-inverse">Remember me</span>
+                    </label>
+                  </div>
+                  <div class="forgot-phone remember">
+                    <a [routerLink]="['/auth/forgot']" class="text-right f-w-600">
+                      Forgot Password?</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row m-t-30">
+                <div class="col-md-12">
+                  <button type="button" (click)="key_submit($event, 'button')" class="
+                      btn
+                      bg-add
+                      btn-md btn-block
+                      waves-light
+                      text-center
+                      submit-border
+                      ripple
+                      m-b-30
+                    ">
+                    LOGIN
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

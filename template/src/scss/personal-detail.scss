@@ -1,0 +1,76 @@
+.row-block {
+  width: 90%;
+  background-color: white;
+  border-radius: 10px;
+  margin: 2% auto;
+  justify-content: center;
+  //text-align: center;
+  padding: 3%;
+}
+.form-headings {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #733fd7;
+  margin-bottom: 5%;
+}
+.label-field {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #733fd7;
+}
+.input-box {
+  border: 1px solid #bb36eb;
+  box-sizing: border-box;
+}
+.input-box::placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  color: #c37bcf;
+}
+.bg-submit {
+  background: #733fd7;
+  color: white;
+  // padding: 3px 40px;
+  // margin-top: 3%;
+  // margin-right: 1rem;
+}
+.bg-cancel {
+  // padding: 3px 40px;
+  // margin-top: 3%;
+  // margin-left: 0.5rem;
+  background: #ff5252;
+  color: white;
+}
+.bg-add {
+  color: white;
+  background: #733fd7;
+  margin-right: 0.2rem;
+}
+.selected {
+  color: white;
+  background-color: #733fd7;
+}
+.file-label {
+  border: 1px solid #c473e0;
+  color: #c37bcf;
+}
+.candidate-detail {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 3% 35%;
+  color: black;
+}
